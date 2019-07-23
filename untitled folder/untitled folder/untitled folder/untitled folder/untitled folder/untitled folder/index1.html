@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic&display=swap" rel="stylesheet">
+    <title></title>
+  </head>
+    <body>
+      <div class="background">
+        <!-- <div class= "sidebar"> -->
+          <!-- image logo -->
+          <!-- navigation -->
+        <!-- </div> -->
+      <!-- main content  -->
+      <header>
+        <div id="modal">
+        <div id="modal-textbox">
+        <!-- <a id="close" href="#">Let's Read!</a> -->
+        <h1 class="intro">Welcome to Bookshelf!</h1>
+          <img src="https://cdn1.iconfinder.com/data/icons/hawcons/32/699018-icon-31-book-bookmark-256.png" class="book1" alt="book icon">
+          <div class="modalText">
+          <h2>Find a book and find your passion!</h2>
+          <p>With Boolshelf you can get information on thousands of books and save them to your shelf! Now, you can remember the books your friends are talking about, and you'll know exactly what to read next. Bookshelf let's you easily keep track of the books you read so you can recommend them to others and get your love for reading back!</p>
+          </div>
+          <div id="modal-footer">
+            <!-- <a id="close" href="#">Close</a> -->
+            <button class="modal-buttons" id="close" href="#">Close</button>
+
+          </div>
+      </div>
+    </div>
+  </header>
+      <main>
+        <div class="container">
+
+            <div class="topsection">
+                <img src="https://cdn1.iconfinder.com/data/icons/hawcons/32/699018-icon-31-book-bookmark-256.png" class="book" alt="book icon">
+                <h1 class="logo">Bookshelf.</h1>
+                <!-- image  -->
+                <form>
+                    <input type="text" placeholder="Find a book..."/>
+                    <input type="submit" value="Get Book Info">
+                </form>
+                <!-- create modal  -->
+                <div class="cover">
+                  <!-- <img id="cover" src="" alt="book cover"> -->
+
+                </div>
+                <div class="bookinfo">
+
+                <dl>
+                    <dt>Title</dt>
+                    <dd id="title"></dd>
+
+                    <dt>Author</dt>
+                    <dd id="author"></dd>
+
+                    <dt>Read the Back</dt>
+                    <dd id="description"></dd>
+
+                    <button type="button" class="listed">Add to Bookshelf</button>
+                </dl>
+                </div>
+                <!-- end of modal  -->
+            </div>
+
+            <div class ="bottomsection">
+            <div class="list">
+              <h2>My Bookshelf</h2>
+              <ul class="readingList">
+              </ul>
+            </div>
+            <div class="read">
+              <!-- books i have read section  -->
+              <h2>Books I've Read</h2>
+              <ul class="newList">
+                <!-- <li></li>
+                <button type="button" class="ratebutton">How was it?</button> -->
+                <img src="https://cdn1.iconfinder.com/data/icons/hawcons/32/699566-icon-4-thumb-up-256.png" class="like" alt="like">
+                <img src="https://cdn1.iconfinder.com/data/icons/hawcons/32/699991-icon-5-thumb-down-512.png" class="dislike" alt="dislike">
+              </ul>
+            </div>
+          </div>
+          </div>
+      </div>
+    </main>
+  </body>
+</html>
